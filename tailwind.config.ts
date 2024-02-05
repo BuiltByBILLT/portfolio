@@ -24,6 +24,10 @@ const config: Config = {
 			padding: {
 				calc: "calc(8px + 1.5625vw)",
 			},
+			fontFamily: {
+				inter: ["var(--font-inter)"],
+				anton: ["var(--font-anton)"],
+			},
 		},
 	},
 	plugins: [],
