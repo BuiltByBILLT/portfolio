@@ -29,20 +29,22 @@ body {
 	}
 }
 
-ul > a {
-	position: relative;
-}
-ul > a > span::after {
-	content: "";
-	position: absolute;
-	width: 1rem;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: white;
-	transition: width 0.3s ease-in-out;
-}
+@media (min-width: 768px) {
+	ul > a {
+		position: relative;
+	}
+	ul > a > span::after {
+		content: "";
+		position: absolute;
+		width: 0px;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: white;
+		transition: width 0.3s ease-in-out;
+	}
 
-ul > a:hover > span::after {
-	width: 100%;
+	ul > a:hover > span::after {
+		width: 100%;
+	}
 }
