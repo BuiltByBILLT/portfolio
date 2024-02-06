@@ -26,18 +26,21 @@ const Header = () => {
 						md:flex-row md:gap-9 md:mt-0 md:px-8 md:font-inter">
 						<Link
 							href="/"
+							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
 							<span>About</span>
 						</Link>
 						<Link
 							href="/"
+							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wide font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
 							<span>Experience</span>
 						</Link>
 						<Link
 							href="/"
+							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
 							<span>Projects</span>
