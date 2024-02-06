@@ -2,6 +2,7 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa" // Importing hamburger icon from react-icons
+import HoverButton from "./HoverButton"
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(true) // State to handle mobile menu
@@ -20,8 +21,9 @@ const Header = () => {
 					md:relative md:h-auto md:bg-transparent md:w-auto md:ml-auto
 					${isOpen ? "h-[100vh]" : "h-[0]"} transition-all duration-500`}>
 					<ul
-						className="mt-28 px-[4vmin] flex flex-col gap-[10vh] font-anton
-						md:flex-row md:mt-0 md:gap-9 md:px-9 md:font-inter">
+						className="flex 
+						flex-col gap-[10vh] mt-28 px-[4vmin] font-anton
+						md:flex-row md:gap-9 md:mt-0 md:px-8 md:font-inter">
 						<Link
 							href="/"
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
@@ -43,7 +45,9 @@ const Header = () => {
 					</ul>
 				</div>
 				<div className="flex items-center gap-6 z-20 place-content-between w-full sm:w-auto">
-					<button className="bg-[#303030] text-white px-5 py-2 rounded-full order-last sm:order-first">Contact Me</button>
+					<div className="order-last sm:order-first">
+						<HoverButton>Contact Me</HoverButton>
+					</div>
 					{isOpen ? (
 						<FaTimes onClick={e => onToggleMenu(e)} className="text-3xl cursor-pointer  md:hidden"></FaTimes>
 					) : (

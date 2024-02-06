@@ -1,6 +1,7 @@
 import Image from "next/image"
 import ContactForm from "./components/ContactForm"
 import Link from "next/link"
+import HoverButton from "./components/HoverButton"
 
 export default function Home() {
 	return (
@@ -23,7 +24,7 @@ export default function Home() {
 						necessitatibus sequi qui alias harum porro?
 					</p>
 					<Link href="/">
-						<button>View My Work</button>
+						<HoverButton>View My Work</HoverButton>
 					</Link>
 				</div>
 

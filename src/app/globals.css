@@ -56,6 +56,21 @@ body {
 	nav > a:hover .wave {
 		animation: wave-animation 2s infinite;
 	}
+
+	.hover-button span {
+		animation: reverse-shift-right-animation 0.5s forwards;
+	}
+
+	.hover-button:hover span {
+		animation: shift-right-animation 0.5s forwards;
+	}
+	.hover-button svg {
+		animation: reverse-fade-right-animation 0.5s forwards;
+	}
+
+	.hover-button:hover svg {
+		animation: fade-right-animation 0.5s forwards;
+	}
 }
 
 @keyframes wave-animation {
@@ -70,5 +85,43 @@ body {
 	40%,
 	80% {
 		rotate: 10deg;
+	}
+}
+
+@keyframes fade-right-animation {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+}
+@keyframes reverse-fade-right-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes shift-right-animation {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(10px);
+	}
+}
+@keyframes reverse-shift-right-animation {
+	0% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(0);
 	}
 }
