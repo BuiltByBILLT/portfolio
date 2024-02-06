@@ -27,19 +27,19 @@ const Header = () => {
 							href="/"
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
-							About
+							<span>About</span>
 						</Link>
 						<Link
 							href="/"
 							className="text-[15vmin] uppercase tracking-wide font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
-							Experience
+							<span>Experience</span>
 						</Link>
 						<Link
 							href="/"
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
-							Projects
+							<span>Projects</span>
 						</Link>
 					</ul>
 				</div>
