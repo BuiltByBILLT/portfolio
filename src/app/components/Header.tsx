@@ -2,7 +2,6 @@
 import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa" // Importing hamburger icon from react-icons
-import { IoLogoNpm } from "react-icons/io5"
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(true) // State to handle mobile menu
@@ -14,7 +13,7 @@ const Header = () => {
 			<nav className="bg-[--bg-start] flex justify-end items-center px-[4vw] py-3 md:py-6 ">
 				<Link href="/" className="hidden sm:block mr-auto z-20 ">
 					<span className="text-white">BUILT BY BILLT</span>
-					<i>👋🏽</i>
+					<i className="wave">👋🏽</i>
 				</Link>
 				<div
 					className={`bg-[#111] fixed top-0 left-0 w-full overflow-hidden z-0

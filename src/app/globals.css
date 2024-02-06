@@ -47,4 +47,28 @@ body {
 	ul > a:hover > span::after {
 		width: 100%;
 	}
+
+	.wave {
+		display: inline-block;
+		translate: 2px -2px;
+		transform-origin: bottom right;
+	}
+	nav > a:hover .wave {
+		animation: wave-animation 2s infinite;
+	}
+}
+
+@keyframes wave-animation {
+	0%,
+	100% {
+		rotate: 0deg;
+	}
+	20%,
+	60% {
+		rotate: -10deg;
+	}
+	40%,
+	80% {
+		rotate: 10deg;
+	}
 }
