@@ -1,5 +1,5 @@
 import Image from "next/image"
-import ContactForm from "./components/ContactForm/ContactForm"
+import ContactForm from "./components/ContactForm"
 import Link from "next/link"
 
 export default function Home() {
