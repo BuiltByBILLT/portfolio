@@ -1,7 +1,8 @@
 import Image from "next/image"
-import ContactForm from "./components/ContactForm"
+import ContactForm from "../components/ContactForm"
 import Link from "next/link"
-import HoverButton from "./components/HoverButton"
+import HoverButton from "../components/HoverButton"
+import Experience from "./Experience"
 
 export default function Home() {
 	return (
@@ -39,6 +40,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
+			<Experience />
 		</main>
 	)
 }
