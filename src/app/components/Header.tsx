@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa" // Importing hamburger icon fro
 import HoverButton from "./HoverButton"
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(true) // State to handle mobile menu
+	const [isOpen, setIsOpen] = useState(false) // State to handle mobile menu
 	function onToggleMenu(e: React.MouseEvent) {
 		setIsOpen(!isOpen)
 	}
