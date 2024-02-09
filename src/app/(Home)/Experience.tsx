@@ -6,8 +6,8 @@ function Experience() {
 	const [active, setActive] = useState("PiggyVest")
 
 	return (
-		<section className="w-full my-8 mb-32">
-			<h1 className="font-anton text-3xl text-right">Experience</h1>
+		<section className="w-full my-32 mb-32">
+			<h1 className="font-anton text-[18vw] md:text-[10vw] text-right leading-[0.8]">EXPeRIENCe</h1>
 			<div
 				className="grid px-[4vw] pt-12 bg-white text-slate-600 rounded-lg 
                             grid-cols-auto">
