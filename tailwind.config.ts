@@ -22,7 +22,7 @@ const config: Config = {
 				"gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 			padding: {
-				grow1: "calc(10vw - 40px)",
+				grow1: "calc(20vw - 80px)",
 			},
 			fontFamily: {
 				inter: ["var(--font-inter)"],
