@@ -49,9 +49,9 @@ function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
 							${isActive ? "h-[270px] pb-6" : "h-[0px] opacity-0"}`}>
 				<h6 className="font-bold">{role}</h6>
 				<p>{description}</p>
-				<div className="flex gap-4 items-end">
-					<img src={logoSrc} alt="logo" className="basis-1/2" />
-					<div className="flex flex-col shrink basis-1/2">
+				<div className="flex gap-[5vw] items-end px-grow1">
+					<img src={logoSrc} alt="logo" className="" />
+					<div className="flex flex-col shrink ">
 						<h6 className="font-bold">Company Bio:</h6>
 						<p>{companyBio}</p>
 					</div>
