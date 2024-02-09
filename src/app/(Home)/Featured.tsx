@@ -23,7 +23,7 @@ export default function Featured() {
 				<div className="relative">
 					<h3 className="font-anton text-3xl py-8 px-4">Maxie Paper</h3>
 					<div className="absolute top-0 right-4 -translate-y-1/2">
-						<CircleText />
+						<CircleText text="visit live site" />
 					</div>
 				</div>
 			</div>

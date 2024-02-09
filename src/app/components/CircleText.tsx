@@ -3,7 +3,7 @@ import React from "react"
 import ReactCurvedText from "react-curved-text"
 import { FaArrowUp } from "react-icons/fa"
 
-const CircleText = () => {
+const CircleText = ({ text }: { text: string }) => {
 	return (
 		<div className="circle bg-white w-[80px] h-[80px] rounded-full relative">
 			<ReactCurvedText
@@ -15,7 +15,7 @@ const CircleText = () => {
 				ry={24}
 				startOffset={0}
 				reversed={true}
-				text="visit live site"
+				text={text}
 				textProps={{ style: { fontSize: 10 } }}
 				textPathProps={{ fill: "#000000" }}
 				ellipseProps={{ style: "fill: #ffffff" } as any}
@@ -30,7 +30,7 @@ const CircleText = () => {
 				ry={24}
 				startOffset={0}
 				reversed={true}
-				text="visit live site"
+				text={text}
 				textProps={{ style: { fontSize: 10 } }}
 				textPathProps={{ fill: "#000000" }}
 				ellipseProps={{ style: "fill: #ffffff" } as any}
