@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Inter, Anton } from "next/font/google"
 import "./globals.css"
-import Header from "./components/Header"
+import Header from "@/components/Header"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton" })

@@ -47,7 +47,10 @@ body {
 	ul > a:hover > span::after {
 		width: 100%;
 	}
+}
 
+/* WAVE ANIMATION */
+@media (min-width: 768px) {
 	.wave {
 		display: inline-block;
 		translate: 2px -2px;
@@ -56,23 +59,7 @@ body {
 	nav > a:hover .wave {
 		animation: wave-animation 2s infinite;
 	}
-
-	.hover-button span {
-		animation: reverse-shift-right-animation 0.5s forwards;
-	}
-
-	.hover-button:hover span {
-		animation: shift-right-animation 0.5s forwards;
-	}
-	.hover-button svg {
-		animation: reverse-fade-right-animation 0.5s forwards;
-	}
-
-	.hover-button:hover svg {
-		animation: fade-right-animation 0.5s forwards;
-	}
 }
-
 @keyframes wave-animation {
 	0%,
 	100% {
@@ -88,6 +75,23 @@ body {
 	}
 }
 
+/* BUTTON ARROW ANIMATION */
+@media (min-width: 768px) {
+	.hover-button span {
+		animation: reverse-shift-right-animation 0.5s forwards;
+	}
+
+	.hover-button:hover span {
+		animation: shift-right-animation 0.5s forwards;
+	}
+	.hover-button svg {
+		animation: reverse-fade-right-animation 0.5s forwards;
+	}
+
+	.hover-button:hover svg {
+		animation: fade-right-animation 0.5s forwards;
+	}
+}
 @keyframes fade-right-animation {
 	0% {
 		opacity: 1;
@@ -123,5 +127,39 @@ body {
 	}
 	100% {
 		transform: translateX(0);
+	}
+}
+
+/* CIRCLE TEXT ANIMATION */
+.rotating-curved-text {
+	-webkit-animation: spin 20s linear infinite;
+	-moz-animation: spin 20s linear infinite;
+	animation: spin 20s linear infinite;
+	position: absolute;
+}
+.mirror {
+	scale: -1 -1;
+}
+.circle-arrow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	rotate: 45deg;
+}
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }

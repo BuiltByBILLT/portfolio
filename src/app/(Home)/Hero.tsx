@@ -1,5 +1,5 @@
 import Link from "next/link"
-import HoverButton from "../components/HoverButton"
+import HoverButton from "@/components/HoverButton"
 
 export default function Hero() {
 	return (
