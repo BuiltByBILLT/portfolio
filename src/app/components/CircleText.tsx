@@ -5,7 +5,7 @@ import { FaArrowUp } from "react-icons/fa"
 
 const CircleText = ({ text }: { text: string }) => {
 	return (
-		<div className="circle bg-white w-[80px] h-[80px] rounded-full relative">
+		<div className="circle bg-white w-[80px] h-[80px] rounded-full relative shadow-inner">
 			<ReactCurvedText
 				width={80}
 				height={80}
