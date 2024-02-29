@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Featured() {
 	return (
-		<section className="w-full mb-64">
+		<section className="w-full">
 			<div
 				className="font-anton leading-none w-full flex mt-8
 				text-[18vw] flex-col 

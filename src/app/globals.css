@@ -163,3 +163,7 @@ body {
 		transform: rotate(360deg);
 	}
 }
+
+.big-button:hover {
+	box-shadow: -10px 0 80px #fff;
+}

@@ -5,13 +5,15 @@ import HoverButton from "@/components/HoverButton"
 import Experience from "./Experience"
 import Hero from "./Hero"
 import Featured from "./Featured"
+import ContactButton from "./ContactButton"
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center mx-[4vw]">
+		<main className="flex min-h-screen flex-col items-center mx-[4vw] mb-16">
 			<Hero />
 			<Experience />
 			<Featured />
+			<ContactButton />
 		</main>
 	)
 }
