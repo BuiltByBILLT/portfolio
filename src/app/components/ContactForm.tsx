@@ -28,11 +28,11 @@ export default function ContactForm() {
 
 function FormField({ name, label, placeholder, type, required }: { label: string; name: string; placeholder: string; type: string; required?: boolean }) {
 	return (
-		<div className="mb-2 flex flex-col">
+		<div className="mb-4 flex flex-col">
 			<label className="mb-2" htmlFor={name}>
 				{label}
 			</label>
-			<input className="bg-transparent border-[0.1rem] border-[#303030] rounded-full px-4 py-2" id={name} name={name} type={type} placeholder={placeholder || label} required={required} />
+			<input className="bg-transparent border-[0.1rem] border-[#303030] rounded-full px-6 py-4" id={name} name={name} type={type} placeholder={placeholder || label} required={required} />
 		</div>
 	)
 }
