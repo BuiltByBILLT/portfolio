@@ -3,10 +3,10 @@ import React from "react"
 
 function ContactButton() {
 	return (
-		<section className="w-full my-16">
+		<section className="w-full mb-16 md:my-16">
 			<Link href="/contact">
 				<div
-					className="glow-button text-[8vw] font-semibold flex justify-center gap-[2vw] items-center rounded-full py-24
+					className="glow-button text-[8vw] font-semibold flex justify-center gap-[2vw] items-center rounded-full py-12 md:py-24
                 ">
 					<span>Contact </span>
 					<span className="hidden md:inline">Me</span>
