@@ -21,8 +21,8 @@ export default function Hero() {
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia id incidunt voluptatem doloremque recusandae facilis expedita! Pariatur similique et earum deserunt dolorem, dicta distinctio
 						necessitatibus sequi qui alias harum porro?
 					</p>
-					<Link href="/">
-						<HoverButton>View My Work</HoverButton>
+					<Link href="/#projects" className="self-start">
+						<HoverButton>View Work</HoverButton>
 					</Link>
 				</div>
 
