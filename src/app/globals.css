@@ -9,6 +9,10 @@
 	font-size: calc(10px + 0.5vw);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: var(--fg);
 	background: linear-gradient(to bottom, transparent, var(--bg-end)) var(--bg-start);

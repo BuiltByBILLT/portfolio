@@ -9,11 +9,12 @@ const Header = () => {
 	const pathname = usePathname()
 	const router = useRouter()
 	const [isOpen, setIsOpen] = useState(false) // State to handle mobile menu
+
 	function onToggleMenu(e: React.MouseEvent) {
 		setIsOpen(!isOpen)
 	}
 	return (
-		<header className="sticky top-0 md:relative">
+		<header className="sticky top-0 z-10">
 			<nav className="bg-[--bg-start] flex justify-end items-center px-[4vw] py-3 md:py-6 ">
 				<Link href="/" className="hidden sm:block mr-auto z-20 ">
 					<span className="text-white">BUILT BY BILLT</span>
@@ -28,21 +29,21 @@ const Header = () => {
 						flex-col gap-[10vh] mt-28 px-[4vmin] font-anton
 						md:flex-row md:gap-9 md:mt-0 md:px-8 md:font-inter">
 						<Link
-							href="/"
+							href="/#about"
 							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
 							<span>About</span>
 						</Link>
 						<Link
-							href="/"
+							href="/#experience"
 							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wide font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">
 							<span>Experience</span>
 						</Link>
 						<Link
-							href="/"
+							href="/#projects"
 							onClick={() => setIsOpen(false)}
 							className="text-[15vmin] uppercase tracking-wider font-semibold overline 
 							md:text-base md:normal-case md:tracking-normal md:font-normal md:no-underline">

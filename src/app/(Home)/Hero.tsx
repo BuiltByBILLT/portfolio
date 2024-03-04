@@ -3,7 +3,7 @@ import HoverButton from "@/components/HoverButton"
 
 export default function Hero() {
 	return (
-		<section className="min-h-[90vh] flex justify-around flex-col">
+		<section className="min-h-[90vh] mb-32 flex flex-col justify-around">
 			<div
 				className="font-anton leading-none w-full flex my-8
 				text-[26vw] flex-col items-center 
@@ -11,7 +11,7 @@ export default function Hero() {
 				<span>BRANDoN </span>
 				<span>GuO</span>
 			</div>
-			<div className="grid auto-rows-auto md:grid-cols-2 gap-12 my-8 grow md:grow-0">
+			<section className="grid auto-rows-auto md:grid-cols-2 gap-12 my-8 grow md:grow-0 scroll-m-28" id="about">
 				<div className="flex flex-col justify-around">
 					<p className="">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa aspernatur unde esse, quos totam qui autem eius, dolor nostrum impedit? Error mollitia similique aperiam inventore
@@ -36,7 +36,7 @@ export default function Hero() {
 						<li className="border-b border-slate-500 py-2">Platform Integrations</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 		</section>
 	)
 }
