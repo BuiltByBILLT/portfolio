@@ -6,17 +6,8 @@
 	--fg: #ffffff;
 	--bg-start: #1a1a1a;
 	--bg-end: #1a1a1a;
-	/* --bg-end: #000000; */
 	font-size: calc(10px + 0.5vw);
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    --fg: #000000;
-    --bg-start: #D6DBDC;
-    --bg-end: #FFFFFF; 
-  }
-} */
 
 body {
 	color: var(--fg);
@@ -29,6 +20,7 @@ body {
 	}
 }
 
+/* NAV UNDERLINE */
 @media (min-width: 768px) {
 	ul > a {
 		position: relative;
@@ -164,6 +156,7 @@ body {
 	}
 }
 
+/* GLOW BUTTON */
 .glow-button {
 	background-color: #303030;
 	color: #6c6c6c;
