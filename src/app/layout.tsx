@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter, Anton } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/Header"
+import Footer from "./components/Footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton" })
@@ -21,6 +22,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	)
