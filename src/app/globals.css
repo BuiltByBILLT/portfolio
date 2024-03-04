@@ -164,6 +164,23 @@ body {
 	}
 }
 
-.big-button:hover {
+.glow-button {
+	background-color: #303030;
+	color: #6c6c6c;
+	transition: all 0.3s;
+}
+.glow-button:hover {
 	box-shadow: -10px 0 80px #fff;
+	background-color: white;
+	color: black;
+}
+
+.glow-button svg path {
+	stroke: currentColor;
+	color: #6c6c6c;
+	transition: color 0.3s;
+}
+
+.glow-button:hover svg path {
+	color: black;
 }

@@ -19,7 +19,11 @@ export default function ContactForm() {
 				<textarea id="message" name="message" className="bg-transparent border-[0.1rem] border-[#303030] rounded-xl px-4 py-2 w-full" />
 			</div>
 			<ValidationError prefix="Message" field="message" errors={state.errors} />
-			<button type="submit" disabled={state.submitting}>
+			<button
+				type="submit"
+				disabled={state.submitting}
+				className="glow-button rounded-full font-semibold my-4 py-6 px-24 self-center 
+			md:px-12 md:py-4  md:self-start">
 				Submit
 			</button>
 		</form>
