@@ -2,7 +2,7 @@ import React from "react"
 
 function HoverButton({ children }: { children: React.ReactNode }) {
 	return (
-		<button className="hover-button bg-[#303030] text-white px-4 py-2 rounded-full flex items-center place-center gap-2">
+		<button className="hover-button bg-[#303030] text-white py-2 rounded-full flex justify-center items-center place-center gap-2 w-36">
 			<span>{children}</span>
 			<svg
 				width="18"

@@ -3,8 +3,11 @@ import Link from "next/link"
 import React, { useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa" // Importing hamburger icon from react-icons
 import HoverButton from "./HoverButton"
+import { usePathname, useRouter } from "next/navigation"
 
 const Header = () => {
+	const pathname = usePathname()
+	const router = useRouter()
 	const [isOpen, setIsOpen] = useState(false) // State to handle mobile menu
 	function onToggleMenu(e: React.MouseEvent) {
 		setIsOpen(!isOpen)
@@ -49,7 +52,15 @@ const Header = () => {
 				</div>
 				<div className="flex items-center gap-6 z-20 place-content-between w-full sm:w-auto">
 					<div className="order-last sm:order-first">
-						<HoverButton>Contact Me</HoverButton>
+						{pathname === "/contact" ? (
+							<Link href="/">
+								<HoverButton>Back Home</HoverButton>
+							</Link>
+						) : (
+							<Link href="/contact">
+								<HoverButton>Contact Me</HoverButton>
+							</Link>
+						)}
 					</div>
 					{isOpen ? (
 						<FaTimes onClick={e => onToggleMenu(e)} className="text-3xl cursor-pointer  md:hidden"></FaTimes>
