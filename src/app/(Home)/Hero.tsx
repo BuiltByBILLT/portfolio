@@ -14,12 +14,12 @@ export default function Hero() {
 			<section className="grid auto-rows-auto md:grid-cols-2 gap-12 my-8 grow md:grow-0 scroll-m-28" id="about">
 				<div className="flex flex-col justify-around">
 					<p className="">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa aspernatur unde esse, quos totam qui autem eius, dolor nostrum impedit? Error mollitia similique aperiam inventore
-						laudantium ut totam quod.
+						Step into the realm of digital transformation with a Full Stack Developer who turns concepts into captivating online experiences! I specialize in architecting dynamic solutions that
+						redefine the way users engage with digital platforms.
 					</p>
 					<p className="my-8">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia id incidunt voluptatem doloremque recusandae facilis expedita! Pariatur similique et earum deserunt dolorem, dicta distinctio
-						necessitatibus sequi qui alias harum porro?
+						My expertise extends beyond the screen, I'm here to redefine your online narrative. Let's embark on a journey where your digital presence isn't just a platform – it's a strategic
+						advantage, driving engagement, conversions, and success.
 					</p>
 					<Link href="/#projects" className="self-start">
 						<HoverButton>View Work</HoverButton>
@@ -27,12 +27,12 @@ export default function Hero() {
 				</div>
 
 				<div className="px-4">
-					<h5 className="uppercase font-bold mb-4">Available for:</h5>
+					<h5 className="uppercase font-extrabold mb-3">Available for:</h5>
 					<ul>
-						<li className="border-b border-slate-500 py-2">Front End Developement</li>
-						<li className="border-b border-slate-500 py-2">Full Stack Development</li>
-						<li className="border-b border-slate-500 py-2">E-Commerce Stores</li>
+						<li className="border-b border-slate-500 py-2">Front End & Full Stack Development</li>
+						<li className="border-b border-slate-500 py-2">Turn-Key E-Commerce Stores</li>
 						<li className="border-b border-slate-500 py-2">Inventory Syncing</li>
+						<li className="border-b border-slate-500 py-2">Workflow Automation</li>
 						<li className="border-b border-slate-500 py-2">Platform Integrations</li>
 					</ul>
 				</div>
