@@ -18,8 +18,8 @@ export default function Hero() {
 						redefine the way users engage with digital platforms.
 					</p>
 					<p className="my-8">
-						My expertise extends beyond the screen, I'm here to redefine your online narrative. Let's embark on a journey where your digital presence isn't just a platform – it's a strategic
-						advantage, driving engagement, conversions, and success.
+						My expertise extends beyond the screen, I'm here to redefine your online narrative. Let's embark on a journey where your digital presence isn't just a platform, it's a strategic advantage,
+						driving engagement, conversions, and success.
 					</p>
 					<Link href="/#projects" className="self-start">
 						<HoverButton>View Work</HoverButton>
