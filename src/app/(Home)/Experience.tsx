@@ -1,6 +1,15 @@
 "use client"
 import React, { useState } from "react"
 import { infoArr } from "./infoArr"
+import StackIcon from "tech-stack-icons"
+import { SiVercel } from "react-icons/si"
+import { FaCcPaypal } from "react-icons/fa6"
+import { SiGooglemaps } from "react-icons/si"
+import { SiAgora } from "react-icons/si"
+import { SiUps } from "react-icons/si"
+import { TbClover } from "react-icons/tb"
+import { SiWebflow } from "react-icons/si"
+import { SiPuppeteer } from "react-icons/si"
 
 function Experience() {
 	const [active, setActive] = useState("PiggyVest")
@@ -28,13 +37,15 @@ interface RoleSectionProps {
 		description: string
 		companyBio: string
 		logoSrc: string
+		stack: string[]
+		url: string
 	}
 	isActive: boolean
 	setActive: (company: string) => void
 }
 
 function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
-	const { company, role, startEnd, description, companyBio, logoSrc } = info
+	const { company, role, startEnd, description, companyBio, logoSrc, stack } = info
 
 	return (
 		<div
@@ -52,9 +63,32 @@ function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
 			<div
 				className={`flex flex-col justify-around overflow-hidden transition-all duration-500
 							${isActive ? "h-[270px]" : "h-[0px] opacity-0"}
-							md:h-auto md:opacity-100 md:basis-[500px] md:grow`}>
+							md:justify-start md:h-auto md:opacity-100 md:basis-[500px] md:grow`}>
 				<h6 className="font-bold">{role}</h6>
 				<p>{description}</p>
+				<div className="flex gap-2 mt-2">
+					{stack.map(tech =>
+						tech === "Vercel" ? (
+							<SiVercel key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Paypal" ? (
+							<FaCcPaypal key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Googlemaps" ? (
+							<SiGooglemaps key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Agora" ? (
+							<SiAgora key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Ups" ? (
+							<SiUps key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Clover" ? (
+							<TbClover key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Webflow" ? (
+							<SiWebflow key={tech} style={{ width: "30px", height: "30px" }} />
+						) : tech === "Puppeteer" ? (
+							<SiPuppeteer key={tech} style={{ width: "30px", height: "30px" }} />
+						) : (
+							<StackIcon key={tech} name={tech} style={{ width: "30px" }} />
+						)
+					)}
+				</div>
 				<div
 					className="flex gap-[5vw] items-end px-grow1
 								md:hidden">
