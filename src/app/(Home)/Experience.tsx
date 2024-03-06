@@ -50,8 +50,15 @@ function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
 	return (
 		<div
 			onClick={() => setActive(company)}
-			className="border-b-2 py-6 cursor-pointer
-						md:flex md:justify-between md:gap-12">
+			className="border-b-2 py-6 cursor-pointer group
+						md:flex">
+			<div
+				className="opacity-0 self-center w-0 h-0 mr-8
+				 flex justify-center items-center rounded-full bg-slate-100
+			group-hover:opacity-100 group-hover:w-[140px] group-hover:h-[140px] transition-all duration-500">
+				<img src={logoSrc} alt="logo" style={{ width: "100px", height: "auto" }} />
+			</div>
+
 			<div className="md:basis-[300px]">
 				<div className={`flex`}>
 					<h6 className="text-xl font-bold">{company}</h6>
@@ -59,9 +66,9 @@ function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
 				</div>
 				<p className="hidden md:block">{companyBio}</p>
 			</div>
-			<div className="hidden md:block md:grow md:shrink"></div>
+
 			<div
-				className={`flex flex-col justify-around overflow-hidden transition-all duration-500
+				className={`flex flex-col justify-around overflow-hidden transition-all duration-500 max-w-prose min-h-[150px] ml-auto
 							${isActive ? "h-[270px]" : "h-[0px] opacity-0"}
 							md:justify-start md:h-auto md:opacity-100 md:basis-[500px] md:grow`}>
 				<h6 className="font-bold">{role}</h6>
