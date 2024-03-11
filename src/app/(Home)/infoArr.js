@@ -45,7 +45,7 @@ export const infoArr = [
 		startEnd: "2021-2022",
 		description:
 			"Reengineered an old website to use Clover Checkout and Inventory APIs so that both online and in-store purchases would be handled by Clover, keeping all sales and inventory data in one place.",
-		companyBio: "is the largest airbrush supplier in the world. Coast Airbrush is your source for all of your airbrush needs.",
+		companyBio: "is the largest airbrush supplier in the world.",
 		logoSrc: "/images/coastairbrush.png",
 		stack: ["reactjs", "mongodb", "nodejs", "Clover", "Ups"],
 		url: "https://www.coastairbrush.com/",
