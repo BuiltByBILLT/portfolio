@@ -77,7 +77,7 @@ function RoleSection({ info, isActive, setActive }: RoleSectionProps) {
 
 			{/* Description Section */}
 			<div
-				className={`flex flex-col justify-around max-w-prose ml-auto overflow-clip
+				className={`flex flex-col justify-around lg:max-w-prose lg:ml-auto overflow-clip
 							${isActive ? "h-[270px]" : "h-[0px] opacity-0"}
 							lg:justify-start lg:h-auto lg:opacity-100  lg:pl-4
 							transition-all duration-500`}>
