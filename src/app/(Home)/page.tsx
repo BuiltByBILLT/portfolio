@@ -9,7 +9,7 @@ import ContactButton from "./ContactButton"
 
 export default function Home() {
 	return (
-		<main className="flex min-h-screen flex-col items-center mx-[4vw] mb-16">
+		<main className="flex min-h-screen flex-col items-center px-[4vw] mb-16 max-w-[1920px] mx-auto">
 			<Hero />
 			<Experience />
 			<Featured />

@@ -7,11 +7,14 @@ export default function Hero() {
 			<div
 				className="font-anton leading-none w-full flex my-8
 				text-[26vw] flex-col items-center 
-				md:text-[18vw] md:flex-row md:place-content-between">
+				md:text-[18vw] md:flex-row md:gap-4 md:place-content-between">
 				<span>BRANDoN </span>
 				<span>GuO</span>
 			</div>
-			<section className="grid auto-rows-auto md:grid-cols-2 gap-12 my-8 grow md:grow-0 scroll-m-28" id="about">
+			<section
+				className="grid auto-rows-auto md:grid-cols-2 gap-12 lg:gap-20 xl:gap-40 my-8 grow md:grow-0 scroll-m-28
+			"
+				id="about">
 				<div className="flex flex-col justify-around">
 					<p className="">
 						Step into the realm of digital transformation with a Full Stack Developer who turns concepts into captivating online experiences! I specialize in architecting dynamic solutions that

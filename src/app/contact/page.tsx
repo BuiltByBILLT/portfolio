@@ -3,8 +3,8 @@ import ContactForm from "@/components/ContactForm"
 
 function ContactPage() {
 	return (
-		<div
-			className="grid mx-[4vw] my-8 gap-8
+		<main
+			className="grid px-[4vw] my-8 gap-8 max-w-[1920px] mx-auto
 		md:grid-cols-2">
 			<section>
 				<div
@@ -28,7 +28,7 @@ function ContactPage() {
 			<section className="text-xl max-w-xl">
 				<ContactForm />
 			</section>
-		</div>
+		</main>
 	)
 }
 
