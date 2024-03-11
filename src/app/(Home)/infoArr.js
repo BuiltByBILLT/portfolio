@@ -36,7 +36,7 @@ export const infoArr = [
 		description: "Built a social media platform for users to upload, share, and interact with media content, voice chat, and make donations via web3.",
 		companyBio: "is a Web3 layer that supercharges your favorite social media platforms!",
 		logoSrc: "/images/knaqapp.png",
-		stack: ["reactjs", "postgresql", "nodejs", "Argora"],
+		stack: ["reactjs", "postgresql", "nodejs", "Agora"],
 		url: "https://www.knaqapp.com",
 	},
 	{
