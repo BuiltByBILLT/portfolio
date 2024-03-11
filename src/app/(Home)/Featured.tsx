@@ -16,10 +16,10 @@ export default function Featured() {
 					<div className="px-1 pt-8 border-2 rounded-3xl">
 						<div className="overflow-hidden">
 							<video autoPlay muted loop className="w-full">
-								<source src="/videos/maxie-mobile.webm" type="video/webm" media="(max-width: 767px)" />
-								<source src="/videos/maxie-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
-								<source src="/videos/maxie-loop.webm" type="video/webm" media="(min-width: 768px)" />
-								<source src="/videos/maxie-loop.mp4" type="video/mp4" media="(min-width: 768px)" />
+								<source src="/videos/maxie-mobile.webm" type="video/webm" media="(max-width: 525px)" />
+								<source src="/videos/maxie-mobile.mp4" type="video/mp4" media="(max-width: 525px)" />
+								<source src="/videos/maxie-loop.webm" type="video/webm" media="(min-width: 526px)" />
+								<source src="/videos/maxie-loop.mp4" type="video/mp4" media="(min-width: 526px)" />
 								Your browser does not support the video tag.
 							</video>
 						</div>
@@ -36,8 +36,8 @@ export default function Featured() {
 					<div className="px-1 pt-8 border-2 rounded-3xl">
 						<div className="overflow-hidden">
 							<video autoPlay muted loop className="w-full">
-								<source src="/videos/bulk-to-save-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
-								<source src="/videos/bulk-to-save-loop.mp4" type="video/mp4" media="(min-width: 768px)" />
+								<source src="/videos/bulk-to-save-mobile.mp4" type="video/mp4" media="(max-width: 525px)" />
+								<source src="/videos/bulk-to-save-loop.mp4" type="video/mp4" media="(min-width: 526px)" />
 								Your browser does not support the video tag.
 							</video>
 						</div>
@@ -54,8 +54,8 @@ export default function Featured() {
 					<div className="px-1 pt-8 border-2 rounded-3xl">
 						<div className="overflow-hidden">
 							<video autoPlay muted loop className="w-full">
-								<source src="/videos/dirt-e-bike-mobile.mp4" type="video/mp4" media="(max-width: 767px)" />
-								<source src="/videos/dirt-e-bike-loop.mp4" type="video/mp4" media="(min-width: 768px)" />
+								<source src="/videos/dirt-e-bike-mobile.mp4" type="video/mp4" media="(max-width: 525px)" />
+								<source src="/videos/dirt-e-bike-loop.mp4" type="video/mp4" media="(min-width: 526px)" />
 								Your browser does not support the video tag.
 							</video>
 						</div>
