@@ -16,7 +16,7 @@ export const infoArr = [
 		description: "Created a custom designed storefront for E-bikes, focusing on the customizability of the bikes, from motor to battery to suspension, etc.",
 		companyBio: "crafts electric dirt bikes for off-road use, custom assembled to fit individual needs.",
 		logoSrc: "/images/dirtebikes.webp",
-		stack: ["sveltejs", "js", "Paypal"],
+		stack: ["nextjs2", "reactjs", "js", "Paypal"],
 		url: "https://www.dirt-e-bikes.com",
 	},
 	{
@@ -26,7 +26,7 @@ export const infoArr = [
 		description: "Designed and developed an animated “Scrollytelling“ website, keeping visitors visually engaged while highlighting product info, creating a more interactive and engaging experience.",
 		companyBio: "supplies a wide range of paper products to businesses and retailers.",
 		logoSrc: "/images/maxiepaper.png",
-		stack: ["sveltejs", "js", "Googlemaps"],
+		stack: ["nextjs2", "reactjs", "js", "Googlemaps"],
 		url: "https://www.maxiepaper.com",
 	},
 	{
